@@ -1,0 +1,101 @@
+@keyframes down{
+	0%{
+		transform: translateY(-500%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+
+@keyframes show{
+	0%{
+		color: rgba(255,255,255,0);
+	}
+	100%{
+		color: rgba(255,255,255,1);
+	}
+}
+
+
+.pyramid {
+  float: left;
+  width: 500px;
+  height: auto;
+  font-family: 'Gabriela';
+  shape-outside: polygon(310px 0, 130px 405px, 558px 405px);
+  padding-right: 50px;
+}
+
+.zone {
+  padding: 40px 0px;
+  text-align: center;
+  margin: 0 auto;
+  background-blend-mode: lighten;
+  cursor: pointer;
+  color: #222;
+  animation: down 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  transform: translateY(-500%);
+  transition: background-color 0.5s;
+}
+.zone:hover{
+	color: white;
+	text-shadow: 1px 1px 2px #000;
+}
+
+/* All images from pexels.com */
+.zone:nth-child(1) {
+  background: rgba(6, 93, 255, 0.7) url("https://d3vuec9wjh8whu.cloudfront.net/media/catalog/category/c_16b1ae86769eca54fe231c65c01ceb33_By-Type.jpg");
+  background-size: cover;
+  width: 33%;
+  -webkit-clip-path: polygon(50% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(50% 0, 100% 100%, 0% 100%);
+  
+  animation-delay: 2s;
+}
+
+.zone:nth-child(1):hover {
+  background-color: rgba(202, 197, 94, 0.2);
+}
+
+.zone:nth-child(2) {
+  background: rgba(255, 45, 220, 0.7) url("http://manhattanpizzaplacehga.com/wp-content/uploads/2016/03/wafswectpmbr0zmug9ly.jpg");
+  background-size: cover;
+  width: 66%;
+  -webkit-clip-path: polygon(25% 0, 75% 0, 100% 100%, 0 100%);
+  clip-path: polygon(25% 0, 75% 0, 100% 100%, 0 100%);
+  
+  animation-delay: 1.5s;
+}
+
+.zone:nth-child(2):hover {
+  background-color: rgba(252, 172, 106, 0.2);
+}
+
+
+.zone:nth-child(3) {
+  background: rgba(20, 91, 224, 0.7) url("https://d3vuec9wjh8whu.cloudfront.net/media/catalog/category/c_16b1ae86769eca54fe231c65c01ceb33_By-Type.jpg");
+  background-size: cover;
+  width: 100%;
+  -webkit-clip-path: polygon(16.5% 0, 83% 0, 100% 100%, 0 100%);
+  clip-path: polygon(16.5% 0, 83% 0, 100% 100%, 0 100%);
+  
+  animation-delay: 1s;
+}
+.zone:nth-child(3):hover {
+  background-color: rgba(130, 140, 125, 0.2);
+}
+
+.zone:nth-child(4) {
+  background: rgba(103, 176, 118, 0.7) url("http://manhattanpizzaplacehga.com/wp-content/uploads/2016/03/wafswectpmbr0zmug9ly.jpg");
+  background-size: cover;
+  width: 100%;
+  -webkit-clip-path: polygon(12.5% 0, 87.5% 0, 100% 100%, 0 100%);
+  clip-path: polygon(12.5% 0, 87.5% 0, 100% 100%, 0 100%);
+  
+  animation-delay: 0.5s;
+}
+.zone:nth-child(4):hover {
+  background-color: rgba(103, 176, 118, 0.2);
+}
